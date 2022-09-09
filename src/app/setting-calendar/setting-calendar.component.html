@@ -1,0 +1,38 @@
+<p-card>
+    <h2>SETTING CALENDAR</h2>
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit($event)">
+        <div class="field grid">
+            <label for="title" class="col-fixed" style="width:100px">Title</label>
+            <div class="col">
+                <input id="title" type="text" formControlName="title"
+                    name="title"
+                    pInputText
+                    placeholder="Title"
+                    class="form-control">
+            </div>
+        </div>
+        <div class="field grid">
+            <label for="start" class="col-fixed" style="width:100px">Start</label>
+            <div class="col">
+                <input id="start" type="text" formControlName="start"
+                    name="start"
+                    pInputText
+                    placeholder="Start"
+                    class="form-control">
+            </div>
+        </div>
+        <div class="field grid">
+            <label for="end" class="col-fixed" style="width:100px">End</label>
+            <div class="col">
+                <input id="end" type="text" formControlName="end"
+                    name="end"
+                    pInputText
+                    placeholder="End"
+                    class="form-control">
+            </div>
+        </div>
+
+        <button pButton type="submit" label="Submit" class="p-3"></button>
+    </form>
+
+</p-card>

@@ -1,0 +1,7 @@
+<p-dialog header="Title" [(visible)]="isDisplay" (onHide)="onHide()"
+    [modal]="true">
+    <app-setting-calendar [dateData]="dateData"></app-setting-calendar>
+</p-dialog>
+
+<button type="button" (click)="showDialog()" icon="pi pi-info-circle"
+    label="Show"></button>
